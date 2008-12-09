@@ -1,10 +1,14 @@
 	
 	body 
 	{
-		font-family: "Lucida Sans";
+		font-family: "Lucida Sans", Verdana, sans-serif;
 		font-size: 12px;
 		cursor: default;
 		overflow: hidden;
+	}
+
+	body.win32 {
+		background-color: #f9f9f9;
 	}
 	
 	#cmBody 
@@ -66,7 +70,7 @@
 		top: 50px;
 		width: 486px;
 		height: 315px;
-		opacity: .90;
+		xopacity: .90;
 		right: 0px;
 		top: 50px;
 		padding: 25px;

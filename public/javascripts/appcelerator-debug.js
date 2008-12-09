@@ -11320,7 +11320,7 @@ Appcelerator.Compiler.removeElementId = function(id)
  * processing - we delete it first
  *
  * @private
- */
+ *
 (function()
 {
 	if (Object.isFunction(window['$']))
@@ -11333,7 +11333,7 @@ Appcelerator.Compiler.removeElementId = function(id)
 	    {
 	    }
 	}
-})();
+})();*/
 
 
 /**
@@ -11342,7 +11342,7 @@ Appcelerator.Compiler.removeElementId = function(id)
  *
  * @param {string} element can either by array of string ids, single strip or element
  * @return {element} element object or null if not found
- */
+ *
 function $(element)
 {
 	if (arguments.length > 1)
@@ -11370,7 +11370,7 @@ function $(element)
 	}
 
 	return element ? Element.extend(element) : null;
-}
+}*/
 
 /**
  * generate a unique ID
