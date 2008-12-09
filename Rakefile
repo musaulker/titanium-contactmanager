@@ -97,7 +97,7 @@ task :win32 => [:setup] do
 	FileUtils.cp_r File.join('config/.'), File.join('stage','win32')
 #temp
 	system 'app package:project win32'
-	FileUtils.cp_r File.join('stage','tweetanium.win32'), File.join('stage','win32','app')
+	FileUtils.cp_r File.join('stage',"#{APPNAME}.win32"), File.join('stage','win32','app')
 	ver = APPVERSION.scan('\.').length
 	appversion = APPVERSION
 	# NSIS requires 0.0.0
