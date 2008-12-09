@@ -1,0 +1,20 @@
+--- 
+- :state: 
+    :exists: false
+    :src: /Library/Appcelerator/lib/templates/COPYING
+    :dest: /Users/paolo/workroot/sandbox/cm/COPYING
+  :name: cp
+- :state: 
+    :exists: false
+    :src: /Library/Appcelerator/lib/templates/README
+    :dest: /Users/paolo/workroot/sandbox/cm/README
+  :name: cp
+- :state: 
+    :path: /Users/paolo/workroot/sandbox/cm/public
+    :exists: true
+  :name: mkdir
+- :state: 
+    :exists: false
+    :src: /Users/paolo/.appcelerator/releases/titanium/project/0.1.0/public/index.html
+    :dest: /Users/paolo/workroot/sandbox/cm/public/index.html
+  :name: cp

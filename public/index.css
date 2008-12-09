@@ -1,0 +1,383 @@
+	
+	body 
+	{
+		font-family: "Lucida Sans";
+		font-size: 12px;
+		cursor: default;
+		overflow: hidden;
+	}
+	
+	#cmBody 
+	{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		bottom: 0px;
+		right: 0px;
+		
+		color: #ffffff;
+		background-color: #151c25;
+		
+	    -webkit-border-bottom-left-radius: 12px;
+		-webkit-border-bottom-right-radius: 12px;
+		-webkit-border-top-left-radius: 12px;
+		-webkit-border-top-right-radius: 12px; 
+
+		min-width: 750px;
+		min-height: 400px;
+	}
+
+	#close
+	{
+		position: fixed;
+		right: 10px;
+		top: 10px;
+		height: 15px;
+		width: 15px;
+		text-shadow: rgb(0, 0, 0) 1px 1px 5px;
+		z-index: 100;
+	}
+
+	.modalMaskingLayer 
+	{
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		bottom: 0px;
+		right: 0px;
+
+	    -webkit-border-bottom-left-radius: 12px;
+		-webkit-border-bottom-right-radius: 12px;
+		-webkit-border-top-left-radius: 12px;
+		-webkit-border-top-right-radius: 12px; 
+
+		
+
+		background-image: url('images/cm/cmMask.png');
+		min-width: 750px;
+		min-height: 400px;
+		z-index: 100;
+		
+	}
+	
+	.editLayer
+	{
+		position: absolute;
+		top: 50px;
+		width: 486px;
+		height: 315px;
+		opacity: .90;
+		right: 0px;
+		top: 50px;
+		padding: 25px;
+		background-image: url('images/cm/cmEditLayer.png');
+		background-repeat: no-repeat;
+	}		
+	
+	.editPicture
+	{
+		width: 64px;
+		height: 64px;
+		float: left;
+		background-image: url('images/cm/cmNoPicture.png');
+		background-repeat: no-repeat;				
+	}
+	
+	.editName
+	{
+		position: absolute; 
+		left: 95px;
+		font-size: 15px;
+		color: #dedede;
+		font-style: italic;
+	}
+	
+	.editDetails
+	{
+		float: left;
+		color: #dedede;
+		padding-left: 6px;
+		margin-top: 20px;
+	}			
+	
+	#cmLogo
+	{
+		background-image: url('images/cm/cmLogo.png');
+		background-repeat: no-repeat;
+		
+		width: 205px;
+		height: 42px;
+		
+		position: absolute;
+		top: 23px;
+		left: 23px;
+	}
+	
+	#cmHeader
+	{
+		background-image: url('images/cm/cmHeaderBG.png');
+		background-repeat: no-repeat;
+		background-position-x: right;
+		background-position-y: bottom;	
+		
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		height: 85px;			
+		border-bottom: 1px dotted #333;
+	}
+	
+	#cmHeaderControls { position: absolute; right: 0px; bottom: 2px;}
+	#cmHeaderControls div { float: right; background-repeat: no-repeat; cursor: hand; }
+	#cmAddFolder { width: 32px; height: 32px; background-image: url('images/cm/cmAddFolder.png'); }
+	#cmAddContact { width: 32px; height: 32px; background-image: url('images/cm/cmAddContact.png'); }
+	#cmSearch { color: #666; font-style: italic; margin: 2px; padding: 5px; width: 172px; height: 22px; background-image: url('images/cm/cmSearch.png');}
+	
+	#cmFolderList 
+	{  
+		position: absolute;
+		left: 0px;
+		width: 250px;
+		top: 85px;
+		bottom: 50px;
+		
+		background-image: url('images/cm/cmFolderListBG.png');
+		background-repeat: no-repeat;
+		background-position-x: right;
+		background-position-y: bottom;
+			
+	}
+	
+	#cmFolderListShadow
+	{
+		position: absolute;
+		right: 0px;
+		width: 30px;
+		top: 42px;
+		bottom: 0px;
+		
+		background-image: url('images/cm/cmFolderListShadow.png');
+		background-repeat: repeat-y;
+		background-position-x: right;				
+	}
+	
+	#cmFolderListShadowTop
+	{
+		position: absolute;
+		right: 0px;
+		width: 30px;
+		top: 0px;
+		height: 42px;
+		
+		background-image: url('images/cm/cmFolderListShadowTop.png');
+		background-repeat: repeat-y;
+		background-position-x: right;				
+	}			
+
+	#cmContactList
+	{
+		position: absolute;
+		right: 0px;
+		left: 0px;
+		top: 0px;
+		bottom: 0px;
+		z-Index: 100;
+		
+		background-image: url('images/cm/cmContactListShadow.png');
+		background-repeat: repeat-x;
+		overflow-y: auto;
+	}
+	
+	#cmContactListContainer
+	{ 
+		position: absolute;
+		right: 0px;
+		left: 250px;
+		top: 85px;
+		bottom: 50px;
+		
+		background-image: url('images/cm/cmContactListBG.png');
+		background-repeat: no-repeat;
+		background-position-x: left;
+		background-position-y: bottom;
+	}
+
+	#cmFooter
+	{ 
+		position: absolute;
+		right: 0px;
+		left: 0px;
+		height: 50px;
+		bottom: 0px;
+		border-top: 1px dotted #333;
+		
+		background-image: url('images/cm/cmFooterBG.png');
+		background-repeat: no-repeat;
+		background-position-x: right;
+		background-position-y: top;
+	}
+
+	#titaniumLogo
+	{ 
+		position: absolute;
+		right: 10px;
+		width: 78px;
+		height: 26px;
+		bottom: 10px;
+		
+		background-image: url('images/cm/titaniumLogo.png');
+		background-repeat: no-repeat;
+	}
+	
+	.contact
+	{
+		border-top: 1px solid #445866;
+		border-bottom: 1px solid #000;
+		padding: 4px;
+		background-color: #21272e;
+		
+	}
+	
+	.picture
+	{
+		width: 64px;
+		height: 64px;
+		float: left;
+		background-image: url('images/cm/cmNoPicture.png');
+		background-repeat: no-repeat;				
+	}
+	
+	.details
+	{
+		float: left;
+		color: #dedede;
+		padding-left: 6px;
+	}
+	
+	.contactName
+	{
+		font-family: "Lucida Sans";
+		font-size: 14px;
+		color: #9fb1ca;
+		float: left;
+		margin-right: 6px;
+	}
+
+	.contactTitle
+	{
+		font-family: "Lucida Sans";
+		font-size: 11px;
+		line-height: 20px;
+		font-style: italic;
+		color: #6c8798;
+		
+	}
+	
+	.inputField
+	{
+		color: #eee;
+		border: 1px solid #21272e;
+		background-color: transparent;
+	}
+	
+	.fieldLabel
+	{
+		color: #a6a6a6;
+	}
+	
+	.searchField
+	{
+		color: #c9d6de;
+		border: none;
+		height: 21px;
+		width: 160px;
+		margin: 0px;
+		margin-left: -2px;
+		margin-top: -2px;
+		font-style: italic;
+		font-size: 13px;
+		font-family: verdana;
+		padding: 0px;
+		padding-left: 4px;
+		
+		background-color: transparent;
+	}			
+	
+	.contactData
+	{
+		color: #000;
+		height: 70px;
+		padding: 6px;
+		position: relative;
+	}
+	
+	.editControls
+	{
+		
+		position: absolute;
+		right: 4px;
+		top: 3px;
+		padding: 1px;
+		
+	}
+	
+	.editControlsInput, .editControls input
+	{
+		color: #fff;
+		text-decoration: none;
+		font-size: 10px;
+		margin: 1px;
+		border: 1px solid #666;
+		padding: 1px;
+		background-color: #151c25;
+		border: 1px solid #fff;
+		margin-right: 2px;
+		color: #fff;
+		font-size: 8px;				
+	}
+
+	.active /* folder */
+	{					
+		background-image: url('images/cm/cmActiveFolder.png');
+		background-repeat: repeat-x;		
+		color: #fff;
+	}
+	
+	.folder
+	{
+		height: 28px;
+		width: 250px;
+		clear: left;
+		background: none;
+	}			
+	
+	.folderName
+	{
+		padding: 5px;
+		padding-left: 6px;
+		font-size: 14px;
+		color: #9fb1ca;
+		float: left;
+	}
+	
+	.folderEdit
+	{
+		float: left;
+	}
+	
+	.folderContentCount
+	{
+		position: relative;
+		top: 4px;
+		font-size: 9px;
+		color: #66c02f; /* #c0a02f; */
+		float: left;
+	}
+	
+	contact img 
+	{ 
+		float: left;
+		border: none;
+	}
+			

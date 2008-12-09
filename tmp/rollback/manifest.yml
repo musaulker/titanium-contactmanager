@@ -1,0 +1,4 @@
+--- 
+:cmdline: create:project . cm titanium --home="/Users/paolo/.appcelerator" --system="/Library/Appcelerator"
+:count: 4
+:time: 2008-12-07 16:01:52.616118 -08:00

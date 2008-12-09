@@ -1,0 +1,10 @@
+Sun Dec 07 16:01:52 -0800 2008 => begin transaction
+Sun Dec 07 16:01:52 -0800 2008 => recording cp, args=/Library/Appcelerator/lib/templates/COPYING,/Users/paolo/workroot/sandbox/cm/COPYING
+Sun Dec 07 16:01:52 -0800 2008 => recording cp, args=/Library/Appcelerator/lib/templates/README,/Users/paolo/workroot/sandbox/cm/README
+Sun Dec 07 16:01:52 -0800 2008 => recording mkdir, args=/Users/paolo/workroot/sandbox/cm/public
+Sun Dec 07 16:01:52 -0800 2008 => recording cp, args=/Users/paolo/.appcelerator/releases/titanium/project/0.1.0/public/index.html,/Users/paolo/workroot/sandbox/cm/public/index.html
+Sun Dec 07 16:01:52 -0800 2008 => commit transaction begin (recordonly=false)
+Sun Dec 07 16:01:52 -0800 2008 => copy /Library/Appcelerator/lib/templates/COPYING to /Users/paolo/workroot/sandbox/cm/COPYING
+Sun Dec 07 16:01:52 -0800 2008 => copy /Library/Appcelerator/lib/templates/README to /Users/paolo/workroot/sandbox/cm/README
+Sun Dec 07 16:01:52 -0800 2008 => copy /Users/paolo/.appcelerator/releases/titanium/project/0.1.0/public/index.html to /Users/paolo/workroot/sandbox/cm/public/index.html
+Sun Dec 07 16:01:52 -0800 2008 => commit transaction completed (4)
